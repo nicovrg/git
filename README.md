@@ -36,17 +36,20 @@ git pull
 ```
 
 ### Move 
-```sh
-```
-- git checkout
-1. move the pointer to another location
-2. [repo/file]: discard changes to the repo/file (stay as it was in the last commit)
-3. [commit id]: go back to the version of the commit
-4. [branch]: go to that branch
 
-- git reset [flag] [commit]
-1. alone: git reset will roll back modifications in the server
-2. --hard: git reset will roll back modifications in the server and the local 
+- move the pointer to another location
+```sh
+git checkout
+[repo/file]: discard changes to the repo/file (stay as it was in the last commit)
+[commit id]: go back to the version of the commit
+[branch]: go to that branch
+```
+
+git reset will roll back modifications in the server
+```sh
+git reset [flag] [commit]
+2. --hard: git reset will also roll back modif on local
+```
 
 ```sh
 1. HEAD: last commit (n)
@@ -58,46 +61,67 @@ git pull
 
 ### Information
 
-- git log
-1. show logs
-2. -p: to see more details
+- show logs
+```sh
+git log
+-p: to see more details
+```
 
-- git diff
-1. show differences
+- show differences
+```sh
+git diff
+```
 
-- git remote --v
-1. show the url of the repo host
+- show the url of the repo host
+```sh
+git remote --v
+```
 
 ### Branches
 
-- git branch [flag] [name]
-1. alone: show all branchs
-2. [name]: create a branch with the corresponding name
-3. -d [name]: delete the branch
+- list branchs
+```sh
+git branch [flag] [name]
+[name]: create a branch with the corresponding name
+-d [name]: delete the branch
+```
 
-- git stash [branch]
-1. alone it saves changes
-2. if we go back to another branch, changes will be lost if not push
-3. git stash will "save" them so we can checkout elsewhere and then come back
-4. it's used when you don't want to commit on branch test but need to go elsewhere
-5. with branch name, it recover changes
+- saves changes on branch
+```sh
+git stash [branch]
+if we go back to another branch, changes will be lost if not push
+git stash will "save" them so we can checkout elsewhere and then come back
+it's used when you don't want to commit on branch test but need to go elsewhere
+with branch name, it recover changes
+```
 
-- git merge
-1. go in the branch where you merge (git checkout master)
-2. merge the branch you want to (git merge test)
+- merge branchs
+```sh
+git merge
+go in the branch where you merge (git checkout master)
+merge the branch you want to (git merge test)
+```
 
 ### Submodules
 
-- git submodule init [link]
-1. add a link to a submodule
+- add a link to a submodule
+```sh
+git submodule init [link]
+```
 
-- git submodule update
-1. clone or update the submodule
+- clone or update the submodule
+```sh
+git submodule update
+```
 
 ### Delete
 
-- git rm
-1. remove a file from the server
+- remove a file from the server
+```sh
+git rm
+```
 
-- git revert [commit]
-1. revert a commit by adding the opposite modifs 
+- revert a commit by adding the opposite modifs 
+```sh
+git revert [commit]
+```
