@@ -4,30 +4,40 @@
 
 ### Basic
 
-- git clone [link] [repo_name]
+- clone a repository
 ```sh
-clone a repository
+git clone [link] [repo_name]
 ```
-- git status
+
+- show file status
 ```sh
-show file status
+git status
 ```
-- git add [repo/file]
-add the repo/file - you can put as many as you want
+- add the repo/file - you can put as many as you want
+```sh
+git add [repo/file]
+```
 
-- git commit
-1. commit the changes
-2. -m: add a message
-3. --amend: modify the last commit message
+- commit the changes
+```sh
+git commit
+-m: add a message
+--amend: modify the last commit message
+```
 
-- git push
-1. push the changes
+- push the changes
+```sh
+git push
+```
 
-- git pull
-1. get the latest version of file uploaded to git
+- get the latest version of file uploaded to git
+```sh
+git pull
+```
 
 ### Move 
-
+```sh
+```
 - git checkout
 1. move the pointer to another location
 2. [repo/file]: discard changes to the repo/file (stay as it was in the last commit)
