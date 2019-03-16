@@ -5,13 +5,13 @@
 ### Basic
 
 - git clone [link] [repo_name]
-1. clone a repository
+clone a repository
 
 - git status
-1. show file status
+show file status
 
 - git add [repo/file]
-1. add the repo/file - you can put as many as you want
+add the repo/file - you can put as many as you want
 
 - git commit
 1. commit the changes
