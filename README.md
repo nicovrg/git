@@ -5,11 +5,13 @@
 ### Basic
 
 - git clone [link] [repo_name]
+```sh
 clone a repository
-
+```
 - git status
+```sh
 show file status
-
+```
 - git add [repo/file]
 add the repo/file - you can put as many as you want
 
