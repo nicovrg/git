@@ -125,3 +125,12 @@ git rm
 ```sh
 git revert [commit]
 ```
+
+
+### Conference git 42
+
+git rebase
+git rebase-interactive [pick: use commit] [reword: rename] [edit: stop to amend ] [squash: merge in the previous commit] [drop: ignore]
+
+git reflog: give compelte history of git command used, usefull when one commit disappear (it has not disappear, reference of the commit has just been lost, and can be recover through reflog)
+
