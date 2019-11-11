@@ -9,6 +9,11 @@
 git clone [link] [repo_name]
 ```
 
+- set another remote repository (push on both repository simultanously with git push)
+```sh
+git remote set-url --add --push origin
+```
+
 - show file status
 ```sh
 git status
